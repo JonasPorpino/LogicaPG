@@ -2,10 +2,36 @@
 #tex-inicial{
     border-width: 2px; /* Estiliza a largura */
     border-style: solid; /* Estiliza estilo */
-    border-color:  rgb(60, 60, 82); /* Estiliza sua cor */
+    border-color:  rgb(2, 2, 66); /* Estiliza sua cor */
     border-radius: 20px; /*raio das bordas */
     padding: 2%; /* distância da margem interna */
-    text-align: justify;  /*justificar texto */
+    text-align: center;  /*justificar texto */
+}
+
+
+
+.container {
+    text-align: center;
+	height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.botao {
+    background-color: #9e5400; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+    font-size: 24px; /* Tamanho da fonte */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Arredonda as bordas */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    transition: background-color 0.3s ease; /* Efeito de transição suave */
+    display: block; /* Faz com que os botões sejam exibidos como elementos de bloco */
+    margin-bottom: 10px; /* Espaçamento entre os botões */
+}
+
+.botao:hover{
+	background-color: #b46d01; /* Cor de fundo ao passar o mouse*/
 }
 
 
@@ -13,9 +39,8 @@
 *
 * Reservado apenas para o menu 
 *
-*/
-@charset "utf-8";
-/* CSS Document */
+*
+* CSS Document */
 
 body{
 	margin: 0;
