@@ -1,6 +1,79 @@
-header{
-    background-color: aquamarine;
+
+#tex-inicial{
+    border-width: 2px; /* Estiliza a largura */
+    border-style: solid; /* Estiliza estilo */
+    border-color:  rgb(60, 60, 82); /* Estiliza sua cor */
+    border-radius: 20px; /*raio das bordas */
+    padding: 2%; /* distância da margem interna */
+    text-align: justify;  /*justificar texto */
 }
-nav{
-    background-color: chocolate;
+
+
+/**
+*
+* Reservado apenas para o menu 
+*
+*/
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0;
+	font-family: sans-serif;
+}
+
+#btn-menu{
+	display: none;
+}
+header{
+	background-color: #9e5400;
+	font-weight: 600;
+}
+header label{
+	color: rgb(255, 242, 127);
+	font-size: 20px;
+	display: block;
+	padding: 5px 10px;
+	width: 20px;
+	border-right: 1px solid #f8bb61;
+	display: none;
+}
+header label:hover{
+	background-color: #a16203;
+}
+.menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	transition: all .5s;
+}
+.menu li a{
+	color: #EFEFEF;
+	text-decoration: none;
+	padding: 15px 20px;
+	display: block;
+	border-right: 1px solid #efefef;
+}
+.menu li a:hover{
+	background-color: #4b2800;
+}
+@media(max-width: 768px){
+	header label{
+		display: block;
+	}
+	.menu ul{
+		position: absolute;
+		background-color: #794413;
+		width: 70%;
+		flex-direction: column;
+		margin-left: -70%;
+	}
+	.menu li a{
+		border-top: 1px solid #efefef;
+	}
+	#btn-menu:checked ~ .menu ul{
+		margin-left: 0;	
+	}
 }
