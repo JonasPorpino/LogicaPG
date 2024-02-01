@@ -1,0 +1,121 @@
+/* Estilo do contêiner principal */
+.container {
+    text-align: center; /* Alinha o texto ao centro */
+    margin-top: 50px; /* Margem superior */
+    background-color: #fff; /* Cor de fundo */
+    padding: 50px; /* Espaçamento interno */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 40%; /* Largura do contêiner */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estilo dos campos de entrada */
+input[type="number"] {
+    width: 80%; /* Largura */
+    padding: 8px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Margem inferior */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px; /* Borda arredondada */
+}
+
+/* Estilo do botão */
+button {
+    padding: 3% 3%; /* Espaçamento interno */
+    background-color: #c27502; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Borda arredondada */
+    cursor: pointer; /* Cursor */
+    font-weight: bolder; /* deixar o texto em negrito*/
+}
+
+/* Estilo do botão ao passar o mouse */
+button:hover {
+    background-color: #a16203; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo do resultado da comparação */
+
+#resultado-conteiner {
+    border: 2px solid #ccc; /* Borda */
+    border-radius: 4px; /* Borda arredondada */
+    font-weight: bolder; /* deixar o texto em negrito*/
+}
+
+.texto{
+    border-width: 2px; /* Estiliza a largura */
+    border-style: solid; /* Estiliza estilo */
+    border-color:  rgb(178, 178, 180); /* Estiliza sua cor */
+    border-radius: 20px; /*raio das bordas */
+    padding: 2%; /* distância da margem interna */
+    text-align: center;  /*justificar texto */
+}
+
+/**
+*
+* Reservado apenas para o menu 
+*
+*
+* CSS Document */
+
+body{
+	margin: 0;
+	font-family: sans-serif;
+}
+
+#btn-menu{
+	display: none;
+}
+header{
+	background-color: #9e5400;
+	font-weight: 600;
+}
+header label{
+	color: rgb(255, 242, 127);
+	font-size: 20px;
+	display: block;
+	padding: 5px 10px;
+	width: 20px;
+	border-right: 1px solid #f8bb61;
+	display: none;
+}
+header label:hover{
+	background-color: #a16203;
+}
+.menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	transition: all .5s;
+}
+.menu li a{
+	color: #EFEFEF;
+	text-decoration: none;
+	padding: 15px 20px;
+	display: block;
+	border-right: 1px solid #efefef;
+}
+.menu li a:hover{
+	background-color: #4b2800;
+}
+@media(max-width: 768px){
+	header label{
+		display: block;
+	}
+	.menu ul{
+		position: absolute;
+		background-color: #794413;
+		width: 70%;
+		flex-direction: column;
+		margin-left: -70%;
+	}
+	.menu li a{
+		border-top: 1px solid #efefef;
+	}
+	#btn-menu:checked ~ .menu ul{
+		margin-left: 0;	
+	}
+}
