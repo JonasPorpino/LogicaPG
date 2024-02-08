@@ -4,75 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lógica-PG</title>
-    <link rel="stylesheet" href="/css/styleVar.css">
+    <!-- Acessar: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- link online do bootstrap 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    -->
     <script type="text/javascript" src="/js/variaveis.js"></script>
 </head>
 <body>
-    <header>
-        <input type="checkbox" id="btn-menu">
-        <label for="btn-menu">&#9776;</label>
-        <nav class="menu">
-            <ul>
-                <li><a href="/index.html">Tela inical</a></li>
-                <li><a href="variaveis.html">O que são variáveis?</a></li>
-                <li><a href="opRelacionais.html">O que são Operadores Relacionais?</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <div class="texto">
-            <p>
-                Vamos exemplificar sobre a Memória do Computador <br>
+    <div class="container">
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li><a href="/index.html">Tela inical</a></li>
+                    <li><a href="variaveis.html">O que são variáveis?</a></li>
+                    <li><a href="opRelacionais.html">O que são Operadores Relacionais?</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="texto">
+                <p>
+                    Vamos exemplificar sobre a Memória do Computador <br>
 
-                [ Espaço Variável 1 ]  [ Espaço Variável 2 ] [ Variável Resultado ] <br>                                                               
+                    [ Espaço Variável 1 ]  [ Espaço Variável 2 ] [ Variável Resultado ] <br>                                                               
 
-                Então o Espaço pode ser ocupada de forma variável <br>
+                    Então o Espaço pode ser ocupada de forma variável <br>
 
-                No Exemplo o Usuário Digita: <br>
-                2 para o espaço [ Variável 1 ] <br>
-                3 para o espaço [ Variável 2 ] <br>
-                e no espaço [ Variável Resultado ] fica reservado para o resultado <br>
+                    No Exemplo o Usuário Digita: <br>
+                    2 para o espaço [ Variável 1 ] <br>
+                    3 para o espaço [ Variável 2 ] <br>
+                    e no espaço [ Variável Resultado ] fica reservado para o resultado <br>
 
-                Logo Variável 1 ->[ 2 ] + Variável 2 ->[ 3 ] = Variável Resultado->[ 5 ] <br>
+                    Logo Variável 1 ->[ 2 ] + Variável 2 ->[ 3 ] = Variável Resultado->[ 5 ] <br>
 
-                Vejamos na prática para melhor compreensão <br>
-            </p>
-        </div>
-        <div class="container">
-            <h2>
-                Calculadora Simples<br>
-                Demonstração de Variáveis
-            </h2>
-            <label for="num1">Variável 1:</label>
-            <input type="number" id="num1">
-            <p></p>
-            <label for="num2">Variável 2</label>
-            <input type="number" id="num2">
-            <p></p>
-            <label for="num2">Variável resultado</label>
-            
-            <div id="resultado-conteiner">
-                <p id="resultado"> <br> </p>
+                    Vejamos na prática para melhor compreensão <br>
+                </p>
             </div>
-            <p></p>
-            <div>
-                <button onclick="somar()">Somar</button>
-                <button onclick="subtrair()">Subtrair</button>
-                <button onclick="multiplicar()">Multiplicar</button>
-                <button onclick="dividir()">Dividir</button>
+            <div class="container">
+                <h2>
+                    Calculadora Simples<br>
+                    Demonstração de Variáveis
+                </h2>
+                <label for="num1">Variável 1:</label>
+                <input type="number" id="num1">
+                <p></p>
+                <label for="num2">Variável 2</label>
+                <input type="number" id="num2">
+                <p></p>
+                <label for="num2">Variável resultado</label>
+                
+                <div id="resultado-conteiner">
+                    <p id="resultado"> <br> </p>
+                </div>
+                <p></p>
+                <div>
+                    <button onclick="somar()">Somar</button>
+                    <button onclick="subtrair()">Subtrair</button>
+                    <button onclick="multiplicar()">Multiplicar</button>
+                    <button onclick="dividir()">Dividir</button>
+                </div>
+                <p></p>
+                <div>
+                    <p id="v1"></p>
+                    <p id="v2"></p>
+                    <p id="v3"></p>
+                </div>
             </div>
-            <p></p>
-            <div>
-                <p id="v1"></p>
-                <p id="v2"></p>
-                <p id="v3"></p>
-            </div>
-        </div>
-    </main>
+        </main>
 
-    <footer>
+        <footer>
 
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
