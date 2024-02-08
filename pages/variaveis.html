@@ -29,7 +29,7 @@
               </li>
             </ul>
           </header>
-        
+        <p></p>
         <main>
             <div class="row">
                 <p class="text-center fw-normal font-monospace">
@@ -49,36 +49,57 @@
                     Vejamos na prática para melhor compreensão <br>
                 </p>
             </div>
+            <p></p>
             <div class="container">
-                <h2>
-                    Calculadora Simples<br>
+                <h2 class="card-header nav justify-content-center">
+                    Calculadora Simples -
                     Demonstração de Variáveis
                 </h2>
-                <label for="num1">Variável 1:</label>
-                <input type="number" id="num1">
                 <p></p>
-                <label for="num2">Variável 2</label>
-                <input type="number" id="num2">
+                <div class="row">
+                    <div class="col">
+                        <input type="number" id="num1" class="form-control" >
+                    </div>
+                    <div class="col">
+                        <label for="num1" class="form-control" > ⇽ Variável 1</label>
+                    </div>
+                </div>
                 <p></p>
-                <label for="num2">Variável resultado</label>
                 
-                <div id="resultado-conteiner">
-                    <p id="resultado"> <br> </p>
-                </div>
-                <p></p>
-                <div>
-                    <button onclick="somar()">Somar</button>
-                    <button onclick="subtrair()">Subtrair</button>
-                    <button onclick="multiplicar()">Multiplicar</button>
-                    <button onclick="dividir()">Dividir</button>
-                </div>
-                <p></p>
-                <div>
-                    <p id="v1"></p>
-                    <p id="v2"></p>
-                    <p id="v3"></p>
+                <div class="row">
+                    
+                    <div class="col">
+                        <input type="number" id="num2" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="num2" class="form-control">⇽ Variável 2</label>
+                    </div>
+
+                    <p></p>
+
+                    <div class="col">
+                        <p type="number" id="resultado" class="form-control"> . </p>
+                    </div>
+
+                    <div class="col">
+                        <label for="num2" class="form-control">⇽ Variável resultado</label>
+                    </div>
                 </div>
             </div>
+                <p></p>
+            <div class="container nav justify-content-center">
+                <button type="button" class="btn btn-outline-secondary" onclick="somar()" style="margin: 1% 1%;">Somar</button>
+                <button type="button" class="btn btn-outline-secondary" onclick="subtrair()" style="margin: 1% 1%;">Subtrair</button>
+                <button type="button" class="btn btn-outline-secondary" onclick="multiplicar()" style="margin: 1% 1%;">Multiplicar</button>
+                <button type="button" class="btn btn-outline-secondary" onclick="dividir()" style="margin: 1% 1%;">Dividir</button>
+            </div>
+            <p></p>
+            <div class="container">
+                <p id="v1" class="nav justify-content-center"></p>
+                <p id="v2" class="nav justify-content-center"></p>
+                <p id="v3" class="nav justify-content-center"></p>
+            </div>
+    </div>
         </main>
 
         <footer>
